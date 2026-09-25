@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>青藍探偵事務所 - 新規登録</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo_group">
+                <img src="img/log.png" alt="ロゴ" >
+                <span class="site_title">青藍探偵事務所</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="00index.html">HOME</a></li>
+                    <li><a href="01work.html">事務内容</a></li>
+                    <li><a href="02info.html">事務所情報</a></li>
+                    <li><a href="03log_in.html">依頼履歴</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="login_title_box">依頼内容ご記入</div>
+
+        <div class="login_form_box">
+            <form action=XXXX>
+                <div class="form_group">
+                    <div>
+                        内容: 
+                        <input type="text" required id="memo">
+                    </div>
+                    <div>
+                        場所: 
+                        <input type="text" required id="place">
+                    </div>
+                    <div>
+                        詳細: 
+                    </div>
+                    <div>
+                        <textarea name="msg" cols=40 rows=5>黒猫、赤い首輪</textarea> 
+                    </div>
+                         
+                    <div>
+                        終わり時間: 
+                        <input type="date" required id="date">
+                    </div>
+                    <div>    
+                        ご希望の価格:
+                        <input type="text" required pattern="[0-9]" id="money">
+                        <select name="enn"> 
+                            <option value="">円</option> 
+                            <option value="">千円</option> 
+                            <option value="">万円</option> 
+                            <option value="">十万</option> 
+                        </select>
+                    </div>
+                    <div>    
+                        電話番号:
+                        <input type="text" required pattern="[0-9]{11}" id="tel">
+                    </div>
+                    <div>    
+                        公開しますか（解決率上がります）:
+                        <input type="radio" name="publish" value="yes">はい
+                        <input type="radio" name="publish" value="no">いいえ
+                    </div>
+                    <button type="submit" class="send">送信</button>
+                    <button type="reset" class="send">取消</button>
+                </div>
+            </form>
+            <a class="back" href="032select.html">戻る</a>
+        </div>
+    </div>
+</body>
+</html>
